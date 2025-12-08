@@ -3,6 +3,7 @@
 Place your visualization PNG files here:
 
 - sentiment-distribution.png
+
 - topic-model.png
 - word-cloud.png
 - (add your other visualizations)
@@ -13,7 +14,7 @@ Place your visualization PNG files here:
 import matplotlib.pyplot as plt
 
 # After creating your chart:
-plt.savefig('your-chart-name.png', dpi=300, bbox_inches='tight')
+plt.savefig('figure_2.png', dpi=300, bbox_inches='tight')
 plt.show()
 ```
 

@@ -30,7 +30,7 @@
             <!-- TODO: Add your research question here -->
             <p>How do reviewers of IT use emotional language to process trauma? What does that reveal about horror as a cultural space for collective healing?</p>
 
-            <p><strong>Background:</strong> Explain why this question matters and what motivated your research.</p>
+            <p><strong>Background:</strong> This question matters because horror films occupy a unique cultural space where audiences confront fear in a controlled environment. It particularily deals with childhood trauma, bullying, and the lingering effects of fear, making it a meaningful text for exploring how people process emotionally charged experiences. Online reviews offer an unfiltered window into how viewers articulate those reactions. The observation that many reviews seemed to use emotional or trauma-related language  to reflect on personal experiences, drove this research. By analyzing these reviews computationally, we can better understand how horror films not only funtion as entertainment but also as a space for collective healing, emotional expression, and the negotiation of trauma.</p>
         </section>
 
         <section id="data">
@@ -46,9 +46,9 @@
             <h3>Analysis Methods</h3>
             <p><strong>Tools:</strong> Python (pandas, VADER, Gensim)</p>
             <ul>
-                <li><strong>Term Frequency Analysis:</strong> [Brief description of how you used this method]</li>
-                <li><strong>Sentiment Analysis (VADER):</strong> [What sentiment patterns did you look for?]</li>
-                <li><strong>Topic Modeling (Gensim LDA):</strong> [How many topics? What did you discover?]</li>
+                <li><strong>Term Frequency Analysis:</strong> We used term frequency analysis to identify the most commonly words and phrases in the text. After preprocessing, we calculated how often each term appeared. This helped reveal the main themes and highlight which concepts the text emphasized most heavily.</li>
+                <li><strong>Sentiment Analysis (VADER):</strong> We examined the overall sentiment of the text using VADER, focusing on the positive, negative, and neutral findings. We looked for patterns such as consistently positive or negative sections and changes in tone. This helped determine how the emotional content varied across the text.</li>
+                <li><strong>Topic Modeling (Gensim LDA):</strong> We generated 5 topics using topic modeling. Each topic consisted of a group of related words, which revealed underlying themes from simple frequency counts. The discovered topics provided knowledge into the main subjects discussed in the text and how they are grouped together conceptually.</li>
             </ul>
         </section>
 
@@ -92,13 +92,13 @@ df['sentiment'] = df['compound'].apply(
             <!-- Multiple visualizations in a grid -->
             <div class="viz-grid">
                 <figure class="viz-container">
-                    <img src="images/topic-model.png"
+                    <img src="images/figure_2.png"
                          alt="Visualization of topic clusters from LDA analysis">
                     <figcaption>Figure 2: Topic clusters from LDA analysis</figcaption>
                 </figure>
 
                 <figure class="viz-container">
-                    <img src="images/word-cloud.png"
+                    <img src="images/.png"
                          alt="Word cloud showing most frequent terms">
                     <figcaption>Figure 3: Most common terms in the corpus</figcaption>
                 </figure>
@@ -112,9 +112,9 @@ df['sentiment'] = df['compound'].apply(
             <p>The computational analysis revealed three major insights:</p>
 
             <ol>
-                <li><strong>Finding 1:</strong> [Describe your first key discovery]</li>
-                <li><strong>Finding 2:</strong> [Describe your second key discovery]</li>
-                <li><strong>Finding 3:</strong> [Describe your third key discovery]</li>
+                <li><strong>Finding 1:</strong> Positive-sentiment reviews frequently paired empowering emotional language with trauma-related terms words such as “face,” “strong,” “brave,” or “overcome.” This suggests that many reviewers used the film as a way to reflect on personal fears and frame their experiences in a more constructive or resilient way.</li>
+                <li><strong>Finding 2:</strong> Negative-sentiment reviews showed a strong association with distress-oriented trauma language, including terms like “triggered,” “disturbing,” “panic,” or “unsettling.” This indicates that for some viewers, the film resurfaced unresolved fear or discomfort, reinforcing rather than easing emotional tension.</li>
+                <li><strong>Finding 3:</strong> Topic modeling revealed that trauma-related language appeared across multiple themes not just in discussions of the story, but also in reviewers’ reflections on their own lives. This pattern shows that horror operates as a shared cultural space where audiences connect their personal emotional histories to the narrative, using communal reviewing practices as a form of meaning-making and collective processing.</li>
             </ol>
 
             <h3>Detailed Results</h3>
@@ -152,22 +152,24 @@ df['sentiment'] = df['compound'].apply(
             </table>
 
             <h3>What Surprised Me</h3>
-            <p>I initially predicted that [your assumption], but the data revealed [what actually happened]. This challenged my understanding because...</p>
+            <p>We initially predicted that positive and negative reviews would show very clear, cleanly separated patterns of trauma language, but the data revealed more overlap than expected some positive reviews still used words associated with fear or distress, while some negative reviews included moments of reflection or empowerment. This challenged my understanding because it showed that emotional processing in horror is not binary. Viewers do not simply feel “good” or “bad”—they often experience trauma, fear, and empowerment simultaneously, and their language reflects that complexity.</p>
         </section>
 
         <section id="reflection">
             <h2>Critical Reflection</h2>
             <!-- TODO: Connect to course frameworks -->
 
-            <p>This project demonstrates what happens when coding meets culture by revealing insights that neither computational analysis nor traditional close reading could discover alone.</p>
+            <p>This project demonstrates what happens when coding meets culture by revealing insights that neither computational analysis nor traditional close reading could discover alone. The computational methods allowed us to identify large-scale emotional and trauma-related patterns across hundreds of reviews, while close reading helped interpret the cultural meaning behind those patterns.
+            What strengthened this project even more was how directly it connected to our course work. Throughout the semester, we explored how texts gain meaning not only through their content but through the communities that interact with them. The project showed that digital humanities tools do not replace interpretation; they expand it, enabling us to see emotional and cultural structures that align with theories we have studied about trauma, memory, audience reception, and participatory culture.
+            </p>
 
             <h3>Integration of Methods</h3>
-            <p><strong>What computational methods revealed:</strong> [Describe patterns only visible through large-scale analysis]</p>
-            <p><strong>What close reading added:</strong> [Describe how interpretive work enriched the computational findings]</p>
+            <p><strong>What computational methods revealed:</strong> The computational analysis uncovered broad emotional patterns that only emerge at scale for example, the clustering of empowerment words (“face,” “strong,” “overcome”) with positive sentiment and distress-oriented trauma terms (“triggered,” “disturbing,” “panic”) with negative sentiment. It also revealed multi-topic connections between personal trauma language and plot discussion, showing that reviewers frequently blend interpretation of the film with autobiographical reflection. These trends would be nearly impossible to see through reading a handful of reviews.</p>
+            <p><strong>What close reading added:</strong> Close reading helped explain why those patterns appeared. By examining specific reviews, it became clear that positive reviewers often described the film as cathartic, framing fear as something they could confront safely. Negative reviewers, however, used trauma language to express unresolved anxieties or discomfort with the film’s content. The interpretive work added nuance showing that horror reviews function as a space for identity, memory, and emotional processing, not just reaction. Close reading transformed the computational patterns from abstract data points into culturally meaningful insights about how people use horror to navigate trauma.</p>
 
             <div class="framework-callout">
                 <h3>📐 Classification Logic</h3>
-                <p>This project connects to <strong>Classification Logic</strong> by revealing how algorithmic categorization shapes our understanding of [your topic]. [Explain the connection...]</p>
+                <p>This project connects to <strong>Classification Logic</strong> by revealing how algorithmic categorization shapes our understanding of how reviewers use emotional language to process trauma. [Explain the connection...]</p>
 
                 <p><em>Critical question:</em> What nuances are lost when we reduce complex cultural expressions to computational categories?</p>
             </div>
@@ -188,7 +190,7 @@ df['sentiment'] = df['compound'].apply(
         <p>📊 <strong>Project Materials:</strong>
             <a href="https://github.com/yourusername/project-name">View Google Colab Notebooks & Data on GitHub</a>
         </p>
-        <p>&copy; 2025 Your Name | WRIT 20833: Introduction to Coding in the Humanities</p>
+        <p>&copy; 2025 Lucy Fulghum and Reagan Nowak | WRIT 20833: Introduction to Coding in the Humanities</p>
     </footer>
 </body>
 </html>
