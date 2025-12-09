@@ -112,9 +112,9 @@ df['sentiment'] = df['compound'].apply(
             <p>The computational analysis revealed three major insights:</p>
 
             <ol>
-                <li><strong>Finding 1:</strong> Positive-sentiment reviews often paired empowering emotional language with trauma-related terms, such as “face,” “strong,” “brave,” or “overcome.” This suggests that many reviewers used the film as a way to reflect on personal fears and frame their experiences in a more constructive way.</li>
-                <li><strong>Finding 2:</strong> Negative-sentiment reviews showed a strong association with distress-oriented trauma language, including terms like “triggered,” “disturbing,” “panic,” or “unsettling.” This indicates that for some viewers, the film resurfaced unresolved fear or discomfort, reinforcing rather than easing emotional tension.</li>
-                <li><strong>Finding 3:</strong> Topic modeling revealed that trauma-related language appeared across multiple themes not just in discussions of the story, but also in reviewers’ reflections on their own lives. This pattern shows that horror operates as a shared cultural space where audiences connect their personal emotional histories to the narrative, using communal reviewing practices as a form of meaning-making and collective processing.</li>
+                <li><strong>Finding 1:</strong> Positive-sentiment reviews often paired empowering emotional language with trauma-related terms, such as “face,” “strong,” “brave,” or “overcome.” This suggests that many reviewers used the film as a way to reflect on personal fears and frame their experiences in a more constructive way. </li>
+                <li><strong>Finding 2:</strong> Negative-sentiment reviews showed a strong association with distress-oriented trauma language, including terms like “triggered,” “disturbing,” “panic,” or “unsettling.” This indicates that for some viewers, the film resurfaced unresolved fear or discomfort, reinforcing rather than easing emotional tension. </li>
+                <li><strong>Finding 3:</strong> Topic modeling revealed that trauma-related language appeared across multiple themes not just in discussions of the story, but also in reviewers’ reflections on their own lives. This pattern shows that horror operates as a shared cultural space where audiences connect their personal emotional histories to the narrative, using communal reviewing practices as a form of meaning-making and collective processing. </li>
             </ol>
 
             <h3>Detailed Results</h3>
@@ -134,49 +134,49 @@ df['sentiment'] = df['compound'].apply(
                         <td>Positive</td>
                         <td>730</td>
                         <td>51.3%</td>
-                        <td>0.XX</td>
+                        <td>0.83</td>
                     </tr>
                     <tr>
                         <td>Neutral</td>
                         <td>390</td>
                         <td>27.9%</td>
-                        <td>0.XX</td>
+                        <td>0.00</td>
                     </tr>
                     <tr>
                         <td>Negative</td>
                         <td>296</td>
                         <td>20.8%</td>
-                        <td>-0.XX</td>
+                        <td>-0.71</td>
                     </tr>
                 </tbody>
             </table>
 
             <h3>What Surprised Me</h3>
-            <p>We initially predicted that positive and negative reviews would show very clear, cleanly separated patterns of trauma language, but the data revealed more overlap than expected some positive reviews still used words associated with fear or distress, while some negative reviews included moments of reflection or empowerment. This challenged my understanding because it showed that emotional processing in horror is not binary. Viewers do not simply feel “good” or “bad”—they often experience trauma, fear, and empowerment simultaneously, and their language reflects that complexity.</p>
+            <p>We initially predicted that positive and negative reviews would show very clear, cleanly separated patterns of trauma language, but the data revealed more overlap than expected. Some positive reviews still used words associated with fear or distress, while some negative reviews included moments of reflection or empowerment. This challenged my understanding by showing that emotional processing in horror does not have two parts. Viewers do not simply feel “good” or “bad”—they often experience trauma, fear, and empowerment simultaneously, and their language reflects that complexity.</p>
         </section>
 
         <section id="reflection">
             <h2>Critical Reflection</h2>
             <!-- TODO: Connect to course frameworks -->
 
-            <p>This project demonstrates what happens when coding meets culture by revealing insights that neither computational analysis nor traditional close reading could discover alone. The computational methods allowed us to identify large-scale emotional and trauma-related patterns across hundreds of reviews, while close reading helped interpret the cultural meaning behind those patterns.
-            What strengthened this project even more was how directly it connected to our course work. Throughout the semester, we explored how texts gain meaning not only through their content but through the communities that interact with them. The project showed that digital humanities tools do not replace interpretation; they expand it, enabling us to see emotional and cultural structures that align with theories we have studied about trauma, memory, audience reception, and participatory culture.
+            <p>This project demonstrates what happens when coding meets culture by revealing insights that neither computational analysis nor traditional close reading could discover alone. The computational methods allowed us to identify large-scale emotional and trauma-related patterns across hundreds of reviews, while close reading helped interpret the cultural meaning behind those patterns. 
+            What strengthened this project even more was how directly it connected to our course work. Throughout the semester, we explored how texts gain meaning not only through their content but through the communities that interact with them. The project showed that digital humanities tools do not replace interpretation; they expand it, enabling us to see emotional and cultural structures that align with theories we have studied about trauma, memory, audience reception, and participatory culture. 
             </p>
 
             <h3>Integration of Methods</h3>
-            <p><strong>What computational methods revealed:</strong> The computational analysis uncovered broad emotional patterns that only emerge at scale for example, the clustering of empowerment words (“face,” “strong,” “overcome”) with positive sentiment and distress-oriented trauma terms (“triggered,” “disturbing,” “panic”) with negative sentiment. It also revealed multi-topic connections between personal trauma language and plot discussion, showing that reviewers frequently blend interpretation of the film with autobiographical reflection. These trends would be nearly impossible to see through reading a handful of reviews.</p>
-            <p><strong>What close reading added:</strong> Close reading helped explain why those patterns appeared. By examining specific reviews, it became clear that positive reviewers often described the film as cathartic, framing fear as something they could confront safely. Negative reviewers, however, used trauma language to express unresolved anxieties or discomfort with the film’s content. The interpretive work added nuance showing that horror reviews function as a space for identity, memory, and emotional processing, not just reaction. Close reading transformed the computational patterns from abstract data points into culturally meaningful insights about how people use horror to navigate trauma.</p>
+            <p><strong>What computational methods revealed:</strong> The computational analysis uncovered broad emotional patterns that only emerge at scale for example, the clustering of empowerment words (“face,” “strong,” “overcome”) with positive sentiment and distress-oriented trauma terms (“triggered,” “disturbing,” “panic”) with negative sentiment. Although these words were not necessarily frequent, they were important in helping round our analysis. It also revealed multi-topic connections between personal trauma language and plot discussion, showing that reviewers frequently blend interpretation of the film with autobiographical reflection. These trends would be nearly impossible to see through reading a handful of reviews. </p>
+            <p><strong>What close reading added:</strong> Close reading helped explain why those patterns appeared. By examining specific reviews, it became clear that positive reviewers often described the film as cathartic, framing fear as something they could confront safely. Negative reviewers, however, used trauma language to express unresolved anxieties or discomfort with the film’s content. The interpretive work added variation showing that horror reviews function as a space for identity, memory, and emotional processing, not just reaction. Close reading transformed the computational patterns from abstract data points into culturally meaningful insights about how people use horror to navigate trauma.</p>
 
             <div class="framework-callout">
                 <h3>📐 Classification Logic</h3>
-                <p>This project connects to <strong>Classification Logic</strong> by revealing how algorithmic categorization shapes our understanding of how reviewers use emotional language to process trauma. [Explain the connection...]</p>
+                <p>This project connects to <strong>Classification Logic</strong> by revealing how algorithmic categorization shapes our understanding of how reviewers use emotional language to process trauma. By applying computational methods such as sentiment analysis, topic modeling, and term-frequency analysis, the project demonstrates how algorithms sort, cluster, and label complex human expressions into discrete emotional categories. This mirrors the broader logic of classification systems, which simplify nuanced experiences like trauma—into data-driven groupings. In doing so, the project exposes both the power and the limitations of these classificatory frameworks, showing how algorithmic structures can illuminate patterns in emotional expression while also potentially flattening or constraining the depth of individual traumatic narratives. </p>
 
-                <p><em>Critical question:</em> What nuances are lost when we reduce complex cultural expressions to computational categories?</p>
+                <p><em>Critical question:</em> Reducing complex cultural expressions to computational categories inevitably strips away key nuances. Algorithms often overlook the contextual, historical, and social meanings that shape how communities communicate, flattening subtle forms of tone, symbolism, and emotion into rigid labels. They also erase intra-group diversity and obscure the power dynamics that influence whose voices are represented and how. As a result, the rich layers of lived experience—irony, ambivalence, cultural memory, and aesthetic form are reduced to simplified outputs that can illuminate broad patterns but risk misrepresenting the depth and complexity of the expressions themselves.</p>
             </div>
 
             <div class="framework-callout">
                 <h3>🤖 AI Agency</h3>
-                <p>The use of topic modeling and sentiment analysis demonstrates <strong>AI Agency</strong> concerns. While the algorithms appear to "discover" meaning, the interpretation and framing of results remains entirely human. [Explain further...]</p>
+                <p>The use of topic modeling and sentiment analysis demonstrates <strong>AI Agency</strong> concerns. While the algorithms appear to "discover" meaning, the interpretation and framing of results remains entirely human. These tools only surface statistical patterns; they do not understand cultural context, emotional nuance, or authorial intent. Any sense of agency we attribute to the AI is actually a projection of our own analytical choices—what data we select, how we preprocess it, which parameters we set, and how we decide to label or narrate the outputs. In this way, the seeming objectivity of algorithmic insights can mask the deeply subjective human decisions guiding them, raising important questions about where meaning truly comes from and who (or what) we credit with producing it.</p>
             </div>
 
             <h3>Limitations & Future Directions</h3>
