@@ -57,7 +57,7 @@
             <!-- TODO: Add visualizations and code snippets -->
 
             <h3>Sentiment Analysis Results</h3>
-            <p>Using VADER sentiment analysis, I examined [describe what you analyzed]...</p>
+            <p>Using VADER sentiment analysis, we examined the various word choice and overall tone used within those word choices. This either came out to be positive, negative, or neutral.</p>
 
             <!-- Single visualization with caption -->
             <figure class="viz-container">
@@ -92,13 +92,13 @@ df['sentiment'] = df['compound'].apply(
             <!-- Multiple visualizations in a grid -->
             <div class="viz-grid">
                 <figure class="viz-container">
-                    <img src="images/figure_2.png"
+                    <img src="images/topic-model.png"
                          alt="Visualization of topic clusters from LDA analysis">
                     <figcaption>Figure 2: Topic clusters from LDA analysis</figcaption>
                 </figure>
 
                 <figure class="viz-container">
-                    <img src="images/.png"
+                    <img src="images/word-cloud.png"
                          alt="Word cloud showing most frequent terms">
                     <figcaption>Figure 3: Most common terms in the corpus</figcaption>
                 </figure>
@@ -112,7 +112,7 @@ df['sentiment'] = df['compound'].apply(
             <p>The computational analysis revealed three major insights:</p>
 
             <ol>
-                <li><strong>Finding 1:</strong> Positive-sentiment reviews frequently paired empowering emotional language with trauma-related terms words such as “face,” “strong,” “brave,” or “overcome.” This suggests that many reviewers used the film as a way to reflect on personal fears and frame their experiences in a more constructive or resilient way.</li>
+                <li><strong>Finding 1:</strong> Positive-sentiment reviews often paired empowering emotional language with trauma-related terms, such as “face,” “strong,” “brave,” or “overcome.” This suggests that many reviewers used the film as a way to reflect on personal fears and frame their experiences in a more constructive way.</li>
                 <li><strong>Finding 2:</strong> Negative-sentiment reviews showed a strong association with distress-oriented trauma language, including terms like “triggered,” “disturbing,” “panic,” or “unsettling.” This indicates that for some viewers, the film resurfaced unresolved fear or discomfort, reinforcing rather than easing emotional tension.</li>
                 <li><strong>Finding 3:</strong> Topic modeling revealed that trauma-related language appeared across multiple themes not just in discussions of the story, but also in reviewers’ reflections on their own lives. This pattern shows that horror operates as a shared cultural space where audiences connect their personal emotional histories to the narrative, using communal reviewing practices as a form of meaning-making and collective processing.</li>
             </ol>
@@ -132,20 +132,20 @@ df['sentiment'] = df['compound'].apply(
                 <tbody>
                     <tr class="highlight">
                         <td>Positive</td>
-                        <td>XXX</td>
-                        <td>XX%</td>
+                        <td>730</td>
+                        <td>51.3%</td>
                         <td>0.XX</td>
                     </tr>
                     <tr>
                         <td>Neutral</td>
-                        <td>XXX</td>
-                        <td>XX%</td>
+                        <td>390</td>
+                        <td>27.9%</td>
                         <td>0.XX</td>
                     </tr>
                     <tr>
                         <td>Negative</td>
-                        <td>XXX</td>
-                        <td>XX%</td>
+                        <td>296</td>
+                        <td>20.8%</td>
                         <td>-0.XX</td>
                     </tr>
                 </tbody>
@@ -180,9 +180,9 @@ df['sentiment'] = df['compound'].apply(
             </div>
 
             <h3>Limitations & Future Directions</h3>
-            <p><strong>What I would do differently:</strong> [Reflect on your process]</p>
-            <p><strong>Questions that remain:</strong> [What would you investigate with more time?]</p>
-            <p><strong>Confidence in conclusions:</strong> [How certain are you about your findings? What caveats should readers consider?]</p>
+            <p><strong>What I would do differently:</strong> We would take more time to find data while also taking time tod design our website. We waited until the last minute and we agreed it could have been easier if we started working more before Thanksgiving break. Our work that was done is good, just rushed to be finished</p>
+            <p><strong>Questions that remain:</strong> I think we answered majority of questions that we had about this topic. everything was very clear and laid out nice especially when it came to processing the data we picked. We would say we wonder how the IT movie reviews relates or contrasts with other horror movie reviews or trauma-related media. We think this could be very informative to the topic at hand and provide more insight to the movie reviews of IT.</p>
+            <p><strong>Confidence in conclusions:</strong> [We are condifent in our findings because of the in-depth work we did to analysis and describe the data. The only caveat to this data is that it is only coming from one movie rather than multiple so the data of trauma healing with horror movies might differ. Overall, the dataset was big which makes us more confident in the work we did.</p>
         </section>
     </main>
 

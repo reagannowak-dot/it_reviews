@@ -3,9 +3,11 @@
 Place your visualization PNG files here:
 
 - sentiment-distribution.png
-
+[sentiment-distribution](sentiment-distribution.png)
 - topic-model.png
+[topic-model](topic-model.png)
 - word-cloud.png
+[world-cloud](world-cloud.png)
 - (add your other visualizations)
 
 ## Exporting from Jupyter
